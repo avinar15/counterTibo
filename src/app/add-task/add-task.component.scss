@@ -1,0 +1,133 @@
+.modal {
+  // z-index: 9999999 !important;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 120px;
+  left: 720px;
+  display: block;
+  z-index: 1000005;
+}
+
+.modal-sm {
+  display: inline-block;
+  min-width: 30% !important;
+  min-height: 42% !important;
+  max-width: unset !important;
+}
+
+.modal-header {
+  background-color: #528f41;
+  display: flex;
+  padding: 9px;
+}
+
+.modal-scrollable {
+  display: inline-block;
+  .modal-header {
+    background-color: #528f41;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6px;
+  }
+  .modal-footer {
+    background-color: #528f41;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    padding-right: 9px;
+    font-weight: bold;
+    justify-content: space-around;
+  }
+
+  .modal-body {
+    color: #fff;
+    background-color: #ffffff !important;
+    // height: 70vh;
+    overflow-y: scroll;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    label {
+      color: black;
+      padding-bottom: 3px;
+    }
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    input {
+      font-weight: 400;
+      line-height: 1.5;
+      color: black !important;
+      background-color: transparent;
+      background-clip: padding-box;
+      border: 1px solid #528f41;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      margin-bottom: 6px;
+      min-width: 105px;
+      min-height: 33px;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.close {
+  background-color: rgb(247, 38, 38);
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.close-footer {
+  font-family: serif;
+  background-color: rgb(247, 38, 38);
+  border-radius: 3%;
+  color: #ffffff;
+  font-size: 21px;
+  padding-right: 9px;
+  margin: 3px;
+}
+
+.header {
+  font-size: 21px;
+  padding-right: 9px;
+  font-weight: bold;
+  color: #fff;
+}
+.add {
+  font-family: serif;
+  background-color: rgb(73, 70, 255);
+  border-radius: 3%;
+  color: #ffffff;
+  font-size: 21px;
+  padding-right: 9px;
+  margin: 3px;
+}

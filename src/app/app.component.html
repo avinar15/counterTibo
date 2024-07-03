@@ -1,0 +1,67 @@
+<div class="page-bg">
+  <div class="content">
+    <div class="header">
+      <div class="clock" >{{ currentTime }}</div>
+      <div class="title">counter</div>
+      <div class="tibo-logo">
+        <img
+          style="max-width: 150px; max-height: 60px"
+          src="../assets/Recangle.png"
+          alt="tibo-logo"
+        />
+      </div>
+    </div>
+    <div class="body">
+      <div class="head-page">
+        <button class="btn-add" (click)="addTask()">Add Task</button>
+      </div>
+      <div class="tasks">
+        <ul>
+          <li *ngFor="let item of tasks , index as i">
+            <div
+              class="conter"
+              *ngIf="item.leftDays && item.leftDays >= 7 && item.leftDays < 15"
+            >
+              <div class="outer-circle-green">
+                <div class="inner-circle-green">
+                  <span class="number-green">{{ item.leftDays }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="conter" *ngIf="item.leftDays && item.leftDays >= 15">
+              <div class="outer-circle-blue">
+                <div class="inner-circle-blue">
+                  <span class="number-blue">{{ item.leftDays }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="conter" *ngIf="item.leftDays && item.leftDays <= 7">
+              <div class="outer-circle-red">
+                <div class="inner-circle-red">
+                  <span class="number-red">{{ item.leftDays }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="disc">
+              <div class="task-title">
+                <span class="task-title-show">{{ item.title }}</span>
+                <button class="delete-task" (click)="deleteTask(i)">
+                  &times;
+                </button>
+              </div>
+              <div class="show-date">
+                <span>{{item.startDate}}  to  {{item.endDate}}</span>
+
+                <!-- <div>{{item.totalDays}}</div> -->
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <span>The longest paths are taken step by step</span>
+    </div>
+  </div>
+</div>

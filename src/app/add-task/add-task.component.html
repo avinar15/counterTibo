@@ -1,0 +1,40 @@
+<div class="modal">
+  <div class="modal-sm modal-scrollable">
+    <div class="modal-header">
+      <span class="header">Enter the information</span>
+      <button class="close" (click)="close()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="inputs">
+        <label>Enter the title :</label>
+        <input
+          class="input"
+          type="text"
+          name="title"
+          [(ngModel)]="task.title"
+          required
+        />
+        <label>Enter the start of days :</label>
+        <input
+          class="input"
+          type="date"
+          name="startDate"
+          [(ngModel)]="task.startDate"
+          required
+        />
+        <label>Enter the end of days :</label>
+        <input
+          class="input"
+          type="date"
+          name="endDate"
+          [(ngModel)]="task.endDate"
+          required
+        />
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="close-footer" (click)="close()">close</button>
+      <button class="add" (click)="add()">Add</button>
+    </div>
+  </div>
+</div>

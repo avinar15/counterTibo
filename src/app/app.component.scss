@@ -1,0 +1,209 @@
+.page-bg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.content {
+  // padding: 12px;
+  width: 100vw;
+  flex: 1;
+}
+
+.header {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242633;
+}
+
+.clock {
+  font-size: 18px;
+  text-align: center;
+  color: bisque;
+}
+.title {
+  font-size: 2em;
+  color: bisque;
+}
+.tibo-logo {
+  padding-right: 12px;
+}
+
+.head-page {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3px;
+}
+
+.btn-add {
+  margin-top: 3px;
+  margin-right: 6px;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #31a300;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.conter {
+  margin: 9px;
+}
+
+.outer-circle-green {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(9, 255, 0, 0.473);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .inner-circle-green {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 5px solid #1fb800;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .number-green {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2bff00;
+  }
+}
+.outer-circle-blue {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 123, 255, 0.486);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .inner-circle-blue {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 5px solid #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .number-blue {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* رنگ عدد داخل دایره */
+  }
+}
+.outer-circle-red {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 0, 0, 0.473);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .inner-circle-red {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 5px solid #ff0000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .number-red {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000; /* رنگ عدد داخل دایره */
+  }
+}
+
+.footer {
+  margin-top: 3px;
+  padding: 9px;
+  background-color: #242633;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  span {
+    font-family: serif;
+    font-style: italic;
+    font-size: 21px;
+    color: beige;
+  }
+}
+
+.tasks {
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      align-items: center;
+      width: 600px;
+      height: 333px;
+    }
+  }
+}
+.task-title-show {
+  font-size: 21px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 18px;
+  padding: 12px;
+  box-shadow: rgba(231, 231, 235, 0.25) 0px 50px 100px -20px,
+    rgba(173, 173, 173, 0.3) 0px 30px 60px -30px,
+    rgba(160, 160, 160, 0.35) 0px -2px 6px 0px inset;
+}
+.delete-task {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 21px;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 9px;
+  box-shadow: rgba(231, 231, 235, 0.25) 0px 50px 100px -20px,
+    rgba(173, 173, 173, 0.3) 0px 30px 60px -30px,
+    rgba(160, 160, 160, 0.35) 0px -2px 6px 0px inset;
+}
+
+.show-date{
+  padding-top: 9px;
+  padding-left: 24px;
+  font-size: 24px;
+}
