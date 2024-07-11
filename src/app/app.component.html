@@ -20,7 +20,7 @@
           <li *ngFor="let item of tasks , index as i">
             <div
               class="conter"
-              *ngIf="item.leftDays && item.leftDays >= 7 && item.leftDays < 15"
+              *ngIf="item.leftDays && item.leftDays > 7 && item.leftDays < 15"
             >
               <div class="outer-circle-green">
                 <div class="inner-circle-green">
